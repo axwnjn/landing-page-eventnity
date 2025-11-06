@@ -21,7 +21,7 @@ const ImageCard = ({
 
   return (
     <div
-      className={`
+      className={` 
         relative overflow-hidden rounded-4xl  
         ${isVertical ? "h-[421] w-[329]" : "h-[520px] "}
       `}

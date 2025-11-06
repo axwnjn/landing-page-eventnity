@@ -8,7 +8,7 @@ const About = () => {
         {/* left */}
         <div className="flex flex-col px-6  max-w-sm gap-4 mt-40">
           <h3 className="font-bold text-[40px]">About Eventnity</h3>
-          <p className=" text-xl font-medium">
+          <p className=" text-xl ">
             Evenity is event management expertise that helps and facilitates
             Event Planners in achieving the goal of carrying out an event.
           </p>
