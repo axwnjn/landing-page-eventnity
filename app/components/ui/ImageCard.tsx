@@ -39,7 +39,7 @@ const ImageCard = ({
       >
         <div className="max-w-160 px-12 flex flex-col gap-4">
           <p className="text-base md:text-xl opacity-80">{desc1}</p>
-          <h2 className="text-4xl md:text-5xl font-bold">{title}</h2>
+          <h2 className="text-4xl  md:text-5xl font-extrabold">{title}</h2>
           <p className="text-lg md:text-lg opacity-70">{desc2}</p>
         </div>
       </div>
