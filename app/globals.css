@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.linear-bg {
+  @apply bg-linear-to-bl from-[#5B21B6]/30 to-[#B321B6]/30;
+}

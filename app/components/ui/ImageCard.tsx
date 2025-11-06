@@ -6,6 +6,7 @@ interface ImageCardProps {
   desc2?: string;
   title?: string;
   orientation?: "horizontal" | "vertical";
+  overlayClass?: string;
 }
 
 const ImageCard = ({
@@ -14,6 +15,7 @@ const ImageCard = ({
   desc2,
   title,
   orientation,
+  overlayClass,
 }: ImageCardProps) => {
   const isVertical = orientation === "vertical";
 
@@ -21,7 +23,7 @@ const ImageCard = ({
     <div
       className={`
         relative overflow-hidden rounded-4xl  
-        ${isVertical ? "h-[500px] w-[350px]" : "h-[520px] "}
+        ${isVertical ? "h-[421] w-[329]" : "h-[520px] "}
       `}
     >
       <Image
@@ -29,12 +31,13 @@ const ImageCard = ({
         alt="image-content"
         fill
         className="object-cover"
-        sizes="240px"
         priority
       />
 
-      <div className="absolute inset-0 bg-black/40 flex flex-col  justify-center  text-white">
-        <div className="max-w-2xl px-6 flex flex-col gap-4">
+      <div
+        className={`absolute inset-0 ${overlayClass} flex flex-col  justify-center  text-white`}
+      >
+        <div className="max-w-160 px-12 flex flex-col gap-4">
           <p className="text-base md:text-xl opacity-80">{desc1}</p>
           <h2 className="text-4xl md:text-5xl font-bold">{title}</h2>
           <p className="text-lg md:text-lg opacity-70">{desc2}</p>
