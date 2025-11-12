@@ -3,6 +3,7 @@ import EventSchedule from "./components/EventSchedule";
 import Explore from "./components/Explore";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Partner from "./components/Partner";
 import Recap from "./components/Recap";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Explore />
       <Recap />
       <EventSchedule />
+      <Partner />
     </>
   );
 };
