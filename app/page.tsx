@@ -1,4 +1,5 @@
 import About from "./components/About";
+import EventSchedule from "./components/EventSchedule";
 import Explore from "./components/Explore";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Explore />
       <Recap />
+      <EventSchedule />
     </>
   );
 };

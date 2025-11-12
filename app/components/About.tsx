@@ -4,7 +4,7 @@ import ImageCard from "./ui/ImageCard";
 const About = () => {
   return (
     <>
-      <section className="grid  md:grid-cols-2 justify-center gap-12 mx-auto max-w-7xl px-12 mt-50 mb-70">
+      <section className="grid md:grid-cols-2 justify-center gap-12 mx-auto max-w-7xl px-12 mt-50 mb-70">
         {/* left */}
         <div className="flex flex-col px-6  max-w-sm gap-4 mt-40">
           <h3 className="font-bold text-[40px]">About Eventnity</h3>
