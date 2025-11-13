@@ -1,14 +1,19 @@
 import Image from "next/image";
 
-const Logo = () => {
+interface logoProps {
+  imageSrc: string;
+  className?: string;
+}
+
+const Logo = ({ imageSrc, className }: logoProps) => {
   return (
     <>
       <div className="w-[230px] h-[143] flex items-center relative justify-center  rounded-2xl shadow-xl">
         <Image
-          src="/images/Hulu_logo_(2018).svg.png"
+          src={imageSrc}
           alt="/logo"
           fill
-          className="object-scale-down p-6"
+          className={`p-10 ${className}`}
         />
       </div>
     </>
