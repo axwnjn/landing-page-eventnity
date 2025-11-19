@@ -11,7 +11,6 @@ const events = [
   },
   {
     image: "/images/pexels-bertellifotografia-34774346.jpg",
-
     title: "Tech Conference",
     desc: "Discover innovations in technology and networking",
     date: "March 10th 2023",
@@ -19,7 +18,6 @@ const events = [
   },
   {
     image: "/images/pexels-mikky-k-158844-625644.jpg",
-
     title: "Music Festival",
     desc: "Feel the rhythm with top artists performing live",
     date: "April 2nd 2023",
@@ -27,7 +25,6 @@ const events = [
   },
   {
     image: "/images/pexels-shkrabaanthony-7167036.jpg",
-
     title: "Design Workshop",
     desc: "Learn creative processes and UI/UX design skills",
     date: "May 12th 2023",
@@ -35,7 +32,6 @@ const events = [
   },
   {
     image: "/images/pexels-rdne-7414113.jpg",
-
     title: "Startup Pitch",
     desc: "Watch founders present their startup ideas to investors",
     date: "June 25th 2023",
@@ -45,23 +41,35 @@ const events = [
 
 const EventSchedule = () => {
   return (
-    <section className="flex flex-col items-center mt-20 mb-50">
-      <h2 className="text-5xl text font-semibold">Event Schedule</h2>
-      <div className="grid grid-cols-3 gap-20 mt-20">
-        {events.map((e, index) => {
-          return (
-            <Card
-              key={index}
-              image={e.image}
-              title={e.title}
-              desc={e.desc}
-              date={e.date}
-              hour={e.hour}
-            />
-          );
-        })}
+    <section className="flex flex-col items-center mt-20 mb-40 px-4">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center">
+        Event Schedule
+      </h2>
+
+      <div
+        className="
+        grid 
+        grid-cols-1 
+        sm:grid-cols-2 
+        lg:grid-cols-3 
+        gap-10 
+        mt-16 
+        max-w-6xl
+      "
+      >
+        {events.map((e, index) => (
+          <Card
+            key={index}
+            image={e.image}
+            title={e.title}
+            desc={e.desc}
+            date={e.date}
+            hour={e.hour}
+          />
+        ))}
       </div>
-      <Button text="View More" className="mt-20" />
+
+      <Button text="View More" className="mt-16" />
     </section>
   );
 };

@@ -5,9 +5,8 @@ const About = () => {
   return (
     <>
       <section className="grid md:grid-cols-2 justify-center gap-12 mx-auto max-w-7xl px-12 mt-50 mb-70">
-        {/* left */}
         <div className="flex flex-col px-6  max-w-sm gap-4 mt-40">
-          <h3 className="font-bold text-[40px]">About Evenity</h3>
+          <h3 className="font-bold text-[40px]">About Eventnity</h3>
           <p className=" text-xl ">
             Evenity is event management expertise that helps and facilitates
             Event Planners in achieving the goal of carrying out an event.
@@ -17,7 +16,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* right */}
         <div className="relative justify-self-center md:justify-self-start">
           <div className="">
             <ImageCard

@@ -45,12 +45,26 @@ const images = [
 
 const Partner = () => {
   return (
-    <section className="flex flex-col items-center mb-50">
-      <h3 className="text-5xl font-semibold mb-12">Client Partner</h3>
-      <div className="grid grid-cols-4 gap-x-23 gap-y-14">
-        {images.map((image) => {
-          return <Logo key={image.id} imageSrc={image.src} />;
-        })}
+    <section className="flex flex-col items-center mb-40 px-4">
+      <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-12 text-center">
+        Client Partner
+      </h3>
+
+      <div
+        className="
+          grid 
+          grid-cols-2 
+          sm:grid-cols-3 
+          md:grid-cols-4 
+          gap-x-10 
+          gap-y-12 
+          max-w-5xl 
+          w-full
+        "
+      >
+        {images.map((image) => (
+          <Logo key={image.id} imageSrc={image.src} />
+        ))}
       </div>
     </section>
   );
