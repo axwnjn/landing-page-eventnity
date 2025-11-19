@@ -3,14 +3,14 @@ import { Card } from "./ui/Card";
 
 const events = [
   {
-    image: "https://picsum.photos/1920/1080",
+    image: "/images/pexels-canvastudio-3194521.jpg",
     title: "Meet up Freelancer",
     desc: "Become a potential and professional freelancer",
     date: "February 6th 2023",
     hour: "10 PM to 12 PM",
   },
   {
-    image: "https://picsum.photos/1920/1080",
+    image: "/images/pexels-bertellifotografia-34774346.jpg",
 
     title: "Tech Conference",
     desc: "Discover innovations in technology and networking",
@@ -18,7 +18,7 @@ const events = [
     hour: "2 PM to 5 PM",
   },
   {
-    image: "https://source.unsplash.com/random/?music",
+    image: "/images/pexels-mikky-k-158844-625644.jpg",
 
     title: "Music Festival",
     desc: "Feel the rhythm with top artists performing live",
@@ -26,7 +26,7 @@ const events = [
     hour: "6 PM to 11 PM",
   },
   {
-    image: "https://source.unsplash.com/random/?music",
+    image: "/images/pexels-shkrabaanthony-7167036.jpg",
 
     title: "Design Workshop",
     desc: "Learn creative processes and UI/UX design skills",
@@ -34,7 +34,7 @@ const events = [
     hour: "1 PM to 4 PM",
   },
   {
-    image: "https://source.unsplash.com/random/?startup",
+    image: "/images/pexels-rdne-7414113.jpg",
 
     title: "Startup Pitch",
     desc: "Watch founders present their startup ideas to investors",

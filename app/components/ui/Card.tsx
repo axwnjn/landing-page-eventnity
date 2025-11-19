@@ -11,13 +11,13 @@ interface cardProps {
 export const Card = ({ image, title, desc, date, hour }: cardProps) => {
   return (
     <>
-      <div className="w-fit">
-        <div className="w-[370] h-[240]  relative overflow-hidden rounded-3xl">
+      <a href="#" className="w-fit group">
+        <div className="w-[370] h-[240] relative overflow-hidden rounded-3xl">
           <Image
             src={image}
             alt="image-content"
             fill
-            className="object-cover"
+            className="object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-500"
             priority
           />
         </div>
@@ -30,7 +30,7 @@ export const Card = ({ image, title, desc, date, hour }: cardProps) => {
           <h3 className="text-gray-700 text-xl font-semibold">{title}</h3>
           <p className="text-gray-500  text-sm">{desc}</p>
         </div>
-      </div>
+      </a>
     </>
   );
 };
