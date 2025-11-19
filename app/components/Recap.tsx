@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { FaPlayCircle } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 
 const Recap = () => {

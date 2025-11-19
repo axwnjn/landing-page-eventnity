@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex font-sans px-4 py-3 justify-between items-center md:justify-evenly ">
-        <span className="font-bold">Eventnity</span>
+        <span className="font-bold">Evenity</span>
         <ul className="hidden font-semibold md:flex gap-4 tracking-tight">
           <li>Home</li>
           <li>Pricing</li>

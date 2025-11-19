@@ -13,7 +13,7 @@ const Footer = () => {
         {/* grid 1st */}
         <div className="flex col-span-2 flex-col gap-[42]">
           <div>
-            <h1 className="text-4xl font-bold">Eventnity</h1>
+            <h1 className="text-4xl font-bold">Evenity</h1>
             <p className="text-xl font-semibold italic">
               Ease of being together
             </p>
@@ -26,7 +26,7 @@ const Footer = () => {
 
         {/* grid 3rd */}
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold">Eventnity</h3>
+          <h3 className="text-xl font-semibold">Evenity</h3>
           <ul className="space-y-2 tracking-wide">
             <li>Start For free</li>
             <li>Login</li>

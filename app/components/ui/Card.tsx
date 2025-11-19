@@ -11,7 +11,7 @@ interface cardProps {
 export const Card = ({ image, title, desc, date, hour }: cardProps) => {
   return (
     <>
-      <a href="#" className="w-fit group">
+      <a href="#" className="w-fit group ">
         <div className="w-[370] h-[240] relative overflow-hidden rounded-3xl">
           <Image
             src={image}
